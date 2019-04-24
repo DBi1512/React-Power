@@ -15,7 +15,7 @@ const headerTagBtn = "Learn more";
 
 const headerTag = "#root";
 
-const HeaderData = { headerImage, headerTitle, headerPara, headerTagBtn, headerTag };
+const headerData = { headerImage, headerTitle, headerPara, headerTagBtn, headerTag };
 
 /* BIGQUOTE ==================================*/
 
@@ -29,12 +29,45 @@ const bigQuoteBtn = "Get started";
 
 const bigQuoteTag = "#bigQuote";
 
-const BigQuoteData = { bigQuoteHeader, bigQuoteBtn, bigQuoteTag };
+const bigQuoteData = { bigQuoteHeader, bigQuoteBtn, bigQuoteTag };
 
 /* SOLUTION ================================= */
 
-
+const solution = [
+  {
+    solutionHeader1: "Superbly ",
+    solutionHeader2: "responsive",
+    solutionPara:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    solutionTag: "#solution",
+    solutionBtn: "Read more",
+  },
+  {
+    solutionHeader1: "Squeeky ",
+    solutionHeader2: "clean",
+    solutionPara:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    solutionTag: "#solution",
+    solutionBtn: "Read more",
+  },
+  {
+    solutionHeader1: "Multi ",
+    solutionHeader2: "purpose",
+    solutionPara:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    solutionTag: "#solution",
+    solutionBtn: "Read more",
+  },
+  {
+    solutionHeader1: "Highly ",
+    solutionHeader2: "flexible",
+    solutionPara:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    solutionTag: "#solution",
+    solutionBtn: "Read more",
+  },
+];
 
 /* DATA ======================================*/
-const Data = { HeaderData, BigQuoteData };
+const Data = { headerData, bigQuoteData, solution };
 export default Data;

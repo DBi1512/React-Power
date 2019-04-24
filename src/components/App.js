@@ -11,12 +11,31 @@ import Footer from "./Footer";
 import Data from "./Data";
 
 class App extends Component {
+
   render() {
+    const renderSolution = Data.solution.map(
+      ({ solutionHeader1, solutionHeader2, solutionPara, solutionTag, solutionBtn }) => (
+        <Solution
+          solutionHeader1={solutionHeader1}
+          solutionHeader2={solutionHeader2}
+          solutionPara={solutionPara}
+          solutionTag={solutionTag}
+          solutionBtn={solutionBtn}
+        />
+      ),
+    );
+
     return (
       <div>
-        <Header header={Data.HeaderData} />
-        <BigQuote bigQuote={Data.BigQuoteData} />
-        <Solution />
+        <Header header={Data.headerData} />
+        <BigQuote bigQuote={Data.bigQuoteData} />
+
+        <section className="border-top">
+          <div className="container">
+            <div className="solution">{renderSolution}</div>
+          </div>
+        </section>
+        
         <Blog />
         <Grid />
         <ContactQuote />
