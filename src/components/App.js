@@ -16,10 +16,6 @@ class App extends Component {
       <div>
         <Header
           header={Data.HeaderData}
-          // headerTitle={Data.headerTitle}
-          // headerPara={Data.headerPara}
-          // headerTagBtn={Data.headerTagBtn}
-          // headerTag={Data.headerTag}
         />
         <BigQuote />
         <Solution />
