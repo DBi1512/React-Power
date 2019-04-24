@@ -1,8 +1,6 @@
 import React from "react";
 
 const Header = props => {
-  console.log(props);
-
   const { headerImage, headerTitle, headerPara, headerTag, headerTagBtn } = props.header;
   return (
     <header>
