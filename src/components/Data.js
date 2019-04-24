@@ -1,7 +1,6 @@
 /* HEADER =====================================*/
 
-// const headerImage = require("../img/Header-img.png");
-
+// const headerImage = require("../img/Header-img.png"); or:
 import headerImage from "../img/Header-img.png";
 
 const headerTitle = {
@@ -20,6 +19,22 @@ const HeaderData = { headerImage, headerTitle, headerPara, headerTagBtn, headerT
 
 /* BIGQUOTE ==================================*/
 
+const bigQuoteHeader = {
+  bigQuote1: "Create a ",
+  bigQuote2: "powerful ",
+  bigQuote3: "solution now!",
+};
+
+const bigQuoteBtn = "Get started";
+
+const bigQuoteTag = "#bigQuote";
+
+const BigQuoteData = { bigQuoteHeader, bigQuoteBtn, bigQuoteTag };
+
+/* SOLUTION ================================= */
+
+
+
 /* DATA ======================================*/
-const Data = { HeaderData };
+const Data = { HeaderData, BigQuoteData };
 export default Data;

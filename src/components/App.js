@@ -14,10 +14,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header
-          header={Data.HeaderData}
-        />
-        <BigQuote />
+        <Header header={Data.HeaderData} />
+        <BigQuote bigQuote={Data.BigQuoteData} />
         <Solution />
         <Blog />
         <Grid />
