@@ -1,10 +1,9 @@
 import React from "react";
-import headerImage from "../img/Header-img.png";
 
 const Header = props => {
   console.log(props);
 
-  const { headerTitle, headerPara, headerTag, headerTagBtn } = props.header;
+  const { headerImage, headerTitle, headerPara, headerTag, headerTagBtn } = props.header;
   return (
     <header>
       <div className="container section-header">

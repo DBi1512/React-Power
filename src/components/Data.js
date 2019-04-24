@@ -1,3 +1,9 @@
+/* HEADER =====================================*/
+
+// const headerImage = require("../img/Header-img.png");
+
+import headerImage from "../img/Header-img.png";
+
 const headerTitle = {
   header1: "Powerfully simple",
   header2: " with a ",
@@ -10,9 +16,10 @@ const headerTagBtn = "Learn more";
 
 const headerTag = "#root";
 
-const HeaderData = { headerTitle, headerPara, headerTagBtn, headerTag };
+const HeaderData = { headerImage, headerTitle, headerPara, headerTagBtn, headerTag };
 
+/* BIGQUOTE ==================================*/
 
-
-const Data= {HeaderData}
+/* DATA ======================================*/
+const Data = { HeaderData };
 export default Data;
