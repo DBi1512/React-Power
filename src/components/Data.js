@@ -68,6 +68,26 @@ const solution = [
   },
 ];
 
+/* BLOG ======================================*/
+
+const blog = [
+  {
+    blogImage: require("../img/img-placeholder.png"),
+    blogTitle: "Blog Title",
+    blogPara: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
+  },
+  {
+    blogImage: require("../img/img-placeholder.png"),
+    blogTitle: "Blog Title",
+    blogPara: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
+  },
+  {
+    blogImage: require("../img/img-placeholder.png"),
+    blogTitle: "Blog Title",
+    blogPara: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
+  },
+];
+
 /* DATA ======================================*/
-const Data = { headerData, bigQuoteData, solution };
+const Data = { headerData, bigQuoteData, solution, blog };
 export default Data;

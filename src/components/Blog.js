@@ -1,38 +1,18 @@
 import React from "react";
-import imagePlaceholder from "../img/img-placeholder.png";
+import Data from "./Data";
 
-const Blog = () => {
+const Blog = ({ blogImage, blogTitle, blogPara }) => {
   return (
-    <section id="blog">
-      <div className="container">
-        <fieldset className="border-top">
-          <legend>
-            <h4>Recent Work</h4>
-          </legend>
-        </fieldset>
-
-        <div className="blog">
-          <div className="blog__item item1 box-shadow">
-            <img className="blog__img" src={imagePlaceholder} alt="something" />
-            <h5>Blog Title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?</p>
-          </div>
-
-          <div className="blog__item item2 box-shadow">
-            <img className="blog__img" src={imagePlaceholder} alt="something" />
-            <h5>Blog Title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?</p>
-          </div>
-
-          <div className="blog__item item3 box-shadow">
-            <img className="blog__img" src={imagePlaceholder} alt="something" />
-            <h5>Blog Title</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="blog__item item1 box-shadow">
+      <img className="blog__img" src={blogImage} alt="something" />
+      <h5>{blogTitle}</h5>
+      <p>{blogPara}</p>
+    </div>
   );
 };
 
-export default Blog;
+const renderBlog = Data.blog.map(({ blogImage, blogTitle, blogPara }) => (
+  <Blog blogImage={blogImage} blogTitle={blogTitle} blogPara={blogPara} />
+));
+
+export default renderBlog;

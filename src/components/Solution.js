@@ -1,4 +1,5 @@
 import React from "react";
+import Data from "./Data";
 
 const Solution = ({ solutionHeader1, solutionHeader2, solutionPara, solutionTag, solutionBtn }) => {
   return (
@@ -16,4 +17,16 @@ const Solution = ({ solutionHeader1, solutionHeader2, solutionPara, solutionTag,
   );
 };
 
-export default Solution;
+const renderSolution = Data.solution.map(
+  ({ solutionHeader1, solutionHeader2, solutionPara, solutionTag, solutionBtn }) => (
+    <Solution
+      solutionHeader1={solutionHeader1}
+      solutionHeader2={solutionHeader2}
+      solutionPara={solutionPara}
+      solutionTag={solutionTag}
+      solutionBtn={solutionBtn}
+    />
+  ),
+);
+
+export default renderSolution;
