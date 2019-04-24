@@ -1,4 +1,4 @@
-/* HEADER =====================================*/
+/* HEADER ================================== */
 
 // const headerImage = require("../img/Header-img.png"); or:
 import headerImage from "../img/Header-img.png";
@@ -17,7 +17,7 @@ const headerTag = "#root";
 
 const headerData = { headerImage, headerTitle, headerPara, headerTagBtn, headerTag };
 
-/* BIGQUOTE ==================================*/
+/* BIGQUOTE ================================== */
 
 const bigQuoteHeader = {
   bigQuote1: "Create a ",
@@ -35,59 +35,101 @@ const bigQuoteData = { bigQuoteHeader, bigQuoteBtn, bigQuoteTag };
 
 const solution = [
   {
-    solutionHeader1: "Superbly ",
-    solutionHeader2: "responsive",
-    solutionPara:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
-    solutionTag: "#solution",
-    solutionBtn: "Read more",
+    header1: "Superbly ",
+    header2: "responsive",
+    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    tag: "#solution",
+    btn: "Read more",
   },
   {
-    solutionHeader1: "Squeeky ",
-    solutionHeader2: "clean",
-    solutionPara:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
-    solutionTag: "#solution",
-    solutionBtn: "Read more",
+    header1: "Squeeky ",
+    header2: "clean",
+    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    tag: "#solution",
+    btn: "Read more",
   },
   {
-    solutionHeader1: "Multi ",
-    solutionHeader2: "purpose",
-    solutionPara:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
-    solutionTag: "#solution",
-    solutionBtn: "Read more",
+    header1: "Multi ",
+    header2: "purpose",
+    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    tag: "#solution",
+    btn: "Read more",
   },
   {
-    solutionHeader1: "Highly ",
-    solutionHeader2: "flexible",
-    solutionPara:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
-    solutionTag: "#solution",
-    solutionBtn: "Read more",
+    header1: "Highly ",
+    header2: "flexible",
+    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam reiciendis neque laboriosam quis sunt ad!",
+    tag: "#solution",
+    btn: "Read more",
   },
 ];
 
-/* BLOG ======================================*/
+/* BLOG ====================================== */
 
 const blog = [
   {
-    blogImage: require("../img/img-placeholder.png"),
-    blogTitle: "Blog Title",
-    blogPara: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
+    image: require("../img/img-placeholder.png"),
+    title: "Blog Title",
+    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
   },
   {
-    blogImage: require("../img/img-placeholder.png"),
-    blogTitle: "Blog Title",
-    blogPara: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
+    image: require("../img/img-placeholder.png"),
+    title: "Blog Title",
+    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
   },
   {
-    blogImage: require("../img/img-placeholder.png"),
-    blogTitle: "Blog Title",
-    blogPara: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
+    image: require("../img/img-placeholder.png"),
+    title: "Blog Title",
+    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui sequi quam veritatis totam quibusdam?",
   },
 ];
 
-/* DATA ======================================*/
-const Data = { headerData, bigQuoteData, solution, blog };
+/* GRID ===================================== */
+
+const testimonial = [
+  {
+    name: "John Smith",
+    para:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe a amet enim aliquam iure cum sapiente, sedporro nam in!",
+  },
+  {
+    name: "John Smith",
+    para:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe a amet enim aliquam iure cum sapiente, sedporro nam in!",
+  },
+  {
+    name: "John Smith",
+    para:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe a amet enim aliquam iure cum sapiente, sedporro nam in!",
+  },
+  {
+    name: "John Smith",
+    para:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe a amet enim aliquam iure cum sapiente, sedporro nam in!",
+  },
+];
+
+/* DEVELOPMENT ============================== */
+
+const development = [
+  {
+    label: "Design",
+    title: "The Design",
+    para:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nemo totam ducimus saepe, earumquisquamhic a fugiat culpa molestias? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nemo totam ducimus saepe, earumquisquamhic a fugiat culpa molestias?",
+    tag: "#Development",
+    btn: "Read more",
+  },
+  {
+    label: "Product",
+    title: "Production",
+    para:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nemo totam ducimus saepe, earumquisquamhic a fugiat culpa molestias?",
+    tag: "#Development",
+    btn: "Read more",
+  },
+];
+
+/* DATA ===================================== */
+const Data = { headerData, bigQuoteData, solution, blog, testimonial, development };
 export default Data;

@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import BigQuote from "./BigQuote";
-import renderSolution from "./Solution";
-import renderBlog from "./Blog";
-import Grid from "./Grid";
+import renderSolutions from "./Solution";
+import renderBlogs from "./Blog";
+import renderTestimonials from "./Testimonials";
+import renderDevelopment from "./Development";
 import ContactQuote from "./ContactQuote";
 import AboutUs from "./AboutUs";
 import Footer from "./Footer";
@@ -19,7 +20,7 @@ class App extends Component {
 
         <section className="border-top">
           <div className="container">
-            <div className="solution">{renderSolution}</div>
+            <div className="solution">{renderSolutions}</div>
           </div>
         </section>
 
@@ -30,11 +31,35 @@ class App extends Component {
                 <h4>Recent Work</h4>
               </legend>
             </fieldset>
-            <div className="blog">{renderBlog}</div>
+            <div className="blog">{renderBlogs}</div>
           </div>
         </section>
 
-        <Grid />
+        <section>
+          <div className="container">
+            <div className="grid-container">
+              <div className="grid__item">
+                <fieldset className="border-top">
+                  <legend>
+                    <h4>Testimonials</h4>
+                  </legend>
+                </fieldset>
+                <div className="grid__item1">{renderTestimonials}</div>
+              </div>
+
+              <div className="grid__item box-shadow">
+                <fieldset className="border-top">
+                  <legend>
+                    <h4>Development</h4>
+                  </legend>
+                </fieldset>
+
+                <div className="tabs">{renderDevelopment}</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <ContactQuote />
         <AboutUs />
         <Footer />

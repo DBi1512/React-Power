@@ -1,32 +1,33 @@
 import React from "react";
 import Data from "./Data";
 
-const Solution = ({ solutionHeader1, solutionHeader2, solutionPara, solutionTag, solutionBtn }) => {
+const Solution = ({ header1, header2, para, tag, btn }) => {
   return (
     <div className="solution-method">
       <i className="fa fa-mobile-alt" />
       <h3 className="solution__header">
-        <strong>{solutionHeader1}</strong>
-        {solutionHeader2}
+        <strong>{header1}</strong>
+        {header2}
       </h3>
-      <p className="solution__para">{solutionPara}</p>
-      <a className="solution__tag" href={solutionTag}>
-        {solutionBtn}
+      <p className="solution__para">{para}</p>
+      <a className="solution__tag" href={tag}>
+        {btn}
       </a>
     </div>
   );
 };
 
-const renderSolution = Data.solution.map(
-  ({ solutionHeader1, solutionHeader2, solutionPara, solutionTag, solutionBtn }) => (
+const renderSolutions = Data.solution.map(
+  ({ header1, header2, para, tag, btn }, index) => (
     <Solution
-      solutionHeader1={solutionHeader1}
-      solutionHeader2={solutionHeader2}
-      solutionPara={solutionPara}
-      solutionTag={solutionTag}
-      solutionBtn={solutionBtn}
+      key={index}
+      header1={header1}
+      header2={header2}
+      para={para}
+      tag={tag}
+      btn={btn}
     />
   ),
 );
 
-export default renderSolution;
+export default renderSolutions;
