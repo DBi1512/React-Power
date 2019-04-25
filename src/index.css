@@ -73,7 +73,7 @@ p {
 }
 
 .box-shadow {
-  box-shadow: 20px 0px 110px -45px rgba(0, 0, 0, 1);
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* HEADER ============================================================================= */
@@ -178,7 +178,7 @@ header {
 
 .solution-method:hover {
   background: #dddddd;
-  box-shadow: 20px 0px 110px -45px rgba(0, 0, 0, 1);
+  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 .solution-method:hover::after {
@@ -260,6 +260,10 @@ header {
   margin-bottom: 15px;
 }
 
+.blog__item .blog__description {
+  padding: 0 10px;
+}
+
 fieldset {
   border: none;
 }
@@ -277,6 +281,7 @@ fieldset h4 {
 }
 
 .grid__item1 {
+  margin-top: 20px;
   display: grid;
   /* grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr; same as below: row / column */
@@ -316,7 +321,7 @@ fieldset h4 {
 .tabs {
   position: relative;
   clear: both;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .tabs .tab {
@@ -330,6 +335,7 @@ fieldset h4 {
   width: 100%;
   height: 300px;
   margin-top: 30px;
+  padding: 0 10px;
 }
 
 .checkboxtab {
@@ -339,6 +345,7 @@ fieldset h4 {
 .tab label {
   margin-right: 30px;
   padding-right: 30px;
+  padding-left: 10px;
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
@@ -653,7 +660,7 @@ footer a {
   .grid__subItem4 {
     padding: 20px 10px 0 10px;
     margin: 0 10px;
-    box-shadow: 20px 0px 110px -45px rgba(0, 0, 0, 1);
+    box-shadow: 51px 1px 100px -58px rgba(0, 0, 0, 1);
   }
 
   .information__item {

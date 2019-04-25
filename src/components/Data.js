@@ -141,6 +141,8 @@ const contactQuote = {
 
 /* ABOUT US ================================= */
 
+
+
 /* FOOTER =================================== */
 
 const footerPara = "copyright © 2003-2012 ventus inc. all rights reserved.";
