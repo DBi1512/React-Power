@@ -130,6 +130,64 @@ const development = [
   },
 ];
 
+/* CONTACTQUOTE ============================= */
+
+const contactQuote = {
+  title: "Get in touch with us ",
+  italicStrong: "now!",
+  tag: "#contactQuote",
+  btn: "Contact us",
+};
+
+/* ABOUT US ================================= */
+
+/* FOOTER =================================== */
+
+const footerPara = "copyright © 2003-2012 ventus inc. all rights reserved.";
+
+const socialBtn = [
+  {
+    tag: "#Footer",
+    className: "fab fa-twitter",
+    spanBtn: "Twitter",
+  },
+  {
+    tag: "#Footer",
+    className: "fab fa-facebook-f",
+    spanBtn: "Facebook",
+  },
+  {
+    tag: "#Footer",
+    className: "fab fa-vimeo-v",
+    spanBtn: "Vimeo",
+  },
+  {
+    tag: "#Footer",
+    className: "fab fa-youtube",
+    spanBtn: "Youtube",
+  },
+  {
+    tag: "#Footer",
+    className: "fab fa-google-plus-g",
+    spanBtn: "Google+",
+  },
+  {
+    tag: "#Footer",
+    className: "fab fa-pinterest-p",
+    spanBtn: "Pinterest",
+  },
+];
+
 /* DATA ===================================== */
-const Data = { headerData, bigQuoteData, solution, blog, testimonial, development };
+const Data = {
+  headerData,
+  bigQuoteData,
+  solution,
+  blog,
+  testimonial,
+  development,
+  contactQuote,
+  footerPara,
+  socialBtn,
+};
 export default Data;
