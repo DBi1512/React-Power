@@ -17,17 +17,18 @@ const Solution = ({ header1, header2, para, tag, btn }) => {
   );
 };
 
-const renderSolutions = Data.solution.map(
-  ({ header1, header2, para, tag, btn }, index) => (
-    <Solution
-      key={index}
-      header1={header1}
-      header2={header2}
-      para={para}
-      tag={tag}
-      btn={btn}
-    />
-  ),
-);
+const renderSolutions = Data.solution.map(({ header1, header2, para, tag, btn }, index) => (
+  <Solution key={index} header1={header1} header2={header2} para={para} tag={tag} btn={btn} />
+));
 
-export default renderSolutions;
+const SolutionApp = () => {
+  return (
+    <section className="border-top">
+      <div className="container">
+        <div className="solution">{renderSolutions}</div>
+      </div>
+    </section>
+  );
+};
+
+export default SolutionApp;

@@ -141,6 +141,17 @@ const contactQuote = {
 
 /* ABOUT US ================================= */
 
+const aboutUs = {
+  para:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nulla sapiente asperiores laborum consequuntur perferendis.",
+  address: "123 Street Name",
+  city: "London",
+  country: "UK",
+  phone: "+44 74139 13807",
+};
+
+
+
 /* FOOTER =================================== */
 
 const footerPara = "copyright © 2003-2012 ventus inc. all rights reserved.";
