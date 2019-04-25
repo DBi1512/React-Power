@@ -73,7 +73,7 @@ p {
 }
 
 .box-shadow {
-  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.6);
 }
 
 /* HEADER ============================================================================= */
@@ -178,7 +178,7 @@ header {
 
 .solution-method:hover {
   background: #dddddd;
-  box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 0 15px -5px rgba(0, 0, 0, 0.6);
 }
 
 .solution-method:hover::after {
@@ -486,14 +486,14 @@ footer a {
   display: none;
   text-transform: capitalize;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .social__icon .fab:hover {
   background: white;
   color: #414141;
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  transition: 0.1s;
+  transition: 0.3s;
 }
 
 .social__icon:hover span {
