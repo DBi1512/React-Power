@@ -1,19 +1,21 @@
 import React from "react";
 
-const ContactQuote = () => {
+const ContactQuote = props => {
+  const { title, italicStrong, tag, btn } = props.contactQuote;
   return (
     <section id="contactQuote">
       <div className="container">
         <div className="bigQuote">
           <div>
             <h2 className="bigQuote__header">
-              Get in touch with us <strong className="italic">Now!</strong>
+              {title}
+              <strong className="italic">{italicStrong}</strong>
             </h2>
           </div>
 
           <div className="button">
-            <a className="bigQuote__tag" href="#ContactQuote">
-              Contact us
+            <a className="bigQuote__tag" href={tag}>
+              {btn}
             </a>
           </div>
         </div>

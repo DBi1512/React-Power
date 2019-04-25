@@ -60,9 +60,9 @@ class App extends Component {
           </div>
         </section>
 
-        <ContactQuote />
+        <ContactQuote contactQuote={Data.contactQuote} />
         <AboutUs />
-        <Footer />
+        <Footer footerPara={Data.footerPara} />
       </div>
     );
   }

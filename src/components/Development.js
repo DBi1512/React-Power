@@ -1,18 +1,12 @@
 import React from "react";
 import Data from "./Data";
 
+// label same with id, click the label to specify which input is used
 const Development = ({ label, title, para, tag, btn }) => {
   return (
     <div className="tab">
-      <input
-        name="checkbox-tab-group"
-        type="radio"
-        id="checkbox1"
-        className="checkboxtab"
-        checked
-        onChange={function() {}}
-      />
-      <label htmlFor="checkbox1">{label}</label>
+      <input id={label} name="checkbox-tab-group" type="radio" className="checkboxtab" />
+      <label htmlFor={label}>{label}</label>
 
       <div className="content">
         <h5>{title}</h5>
